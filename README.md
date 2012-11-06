@@ -29,4 +29,7 @@ Please site [4] or [1] if you use it. The code was tested under Ubuntu 11 operat
 The solver itself is in the /src folder. It contains only headers and hence does not require any precompilation and is dependent on the standard library only. Look into /example/example.cpp to see how it can be used. To compile /example.cpp BOOST::UBLAS library is required. Further details - in src/primalSolver.h .
 
 The folder /tests contains unit and regression tests. Use ccmake and make commants from /TS to build them. You will need a CPPUNIT and BOOST::UBLAS libraries (both are included into Ubuntu 10-12 distributions) to do build the tests. Run ./tests from /tests directory if you want to check tests. You should have right permissions for /tests to do this, since tests will create .tst files, which content will be compared to the content of existing .chk files.
-
+---------------------------------------------------
+Versions history:
+1.0 - initial version
+1.1 - FIXED: Numerical bug when dealing with degenerate problems 
