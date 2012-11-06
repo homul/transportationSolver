@@ -1,0 +1,540 @@
+a:[3](0.7,0.3,0)
+b:[4](1,0,0,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.7)(1,0.3)
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,0.7)
+x=1: (0,0.3)
+x=2: 
+buffer: (0.7,0,0)(0.3,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 
+result=0
+======================================================
+a:[3](0.7,0.3,0)
+b:[4](1,0,0,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.7)(1,0.3)
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,0.7)
+x=1: (0,0.3)
+x=2: 
+buffer: (0.7,0,0)(0.3,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 
+result=0
+======================================================
+Transpose: bin=ublas::trans(bin);
+a:[4](1,0,0,0)
+b:[3](0.7,0.3,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=4
+ysize=3
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.7)
+y=1: (0,0.3)
+y=2: 
+column Lists: 
+x=0: (0,0.7)(1,0.3)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.7,0,0)(0.3,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+a:[4](1,0,0,0)
+b:[3](0.7,0.3,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.7)
+y=1: (0,0.3)
+y=2: 
+column Lists: 
+x=0: (0,0.7)(1,0.3)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.7,0,0)(0.3,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+a:[4](1,0,0,0)
+b:[3](0.6,0.4,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.6)
+y=1: (0,0.4)
+y=2: 
+column Lists: 
+x=0: (0,0.6)(1,0.4)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.6,0,0)(0.4,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+Transpose: bin=ublas::trans(bin);
+a:[3](0.6,0.4,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,-1,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.1)(1,0.4)
+y=1: 
+y=2: (0,0.5)
+y=3: 
+column Lists: 
+x=0: (0,0.1)(2,0.5)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.1,0,0)(0.5,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-0.5
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.45,0,0.55,0)
+bin:[3,4]((0,0,-1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.05)(1,0.4)
+y=1: 
+y=2: (0,0.55)
+y=3: 
+column Lists: 
+x=0: (0,0.05)(2,0.55)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.05,0,0)(0.55,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-0.55
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.4,0,0.6,0)
+bin:[3,4]((0,0,-1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0)(1,0.4)
+y=1: 
+y=2: (0,0.6)
+y=3: 
+column Lists: 
+x=0: (0,0)(2,0.6)
+x=1: (0,0.4)
+x=2: 
+buffer: (0,0,0)(0.6,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-0.6
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.3,0,0.7,0)
+bin:[3,4]((0,0,-1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.3)
+y=1: 
+y=2: (0,0.6)(1,0.1)
+y=3: 
+column Lists: 
+x=0: (2,0.6)
+x=1: (0,0.3)(2,0.1)
+x=2: 
+buffer: (nan,nan,nan)(0.6,0,2)(0.1,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.3,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-0.6
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.7,0,0.3,0)
+bin:[3,4]((0,0,-1,0),(-1,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.3)(1,0.4)
+y=1: 
+y=2: (0,0.3)
+y=3: 
+column Lists: 
+x=0: (0,0.3)(2,0.3)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.3,0,0)(0.4,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.3,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-0.7
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.5)(1,0)
+y=1: 
+y=2: (1,0.5)
+y=3: 
+column Lists: 
+x=0: (0,0.5)
+x=1: (0,0)(2,0.5)
+x=2: 
+buffer: (0.5,0,0)(0,1,0)(0.5,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,-1,0),(-1,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.5)
+y=1: 
+y=2: (0,0.5)(1,0)
+y=3: 
+column Lists: 
+x=0: (2,0.5)
+x=1: (0,0.5)(2,0)
+x=2: 
+buffer: (nan,nan,nan)(0.5,1,0)(0,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.5,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=-1
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((1,0,0,0),(0,0,1,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.5)
+y=1: 
+y=2: (0,0.5)(1,0)
+y=3: 
+column Lists: 
+x=0: (2,0.5)
+x=1: (0,0.5)(2,0)
+x=2: 
+buffer: (nan,nan,nan)(0.5,1,0)(0,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.5,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0

@@ -1,0 +1,246 @@
+An empty list:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+lst.push(0,1,10.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=1
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: (0,10)
+y=2: 
+y=3: 
+column Lists: 
+x=0: (1,10)
+x=1: 
+x=2: 
+buffer: (10,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+lst.push(0,0,9.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,9)(1,10)
+x=1: 
+x=2: 
+buffer: (10,0,1)(9,0,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+Again lst.push(0,1,11.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,9)(1,10)(1,11)
+x=1: 
+x=2: 
+buffer: (10,0,1)(9,0,0)(11,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+lst.push(0,2,12.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=4
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)
+y=3: 
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: 
+x=2: 
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+lst.push(0,2,12.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=5
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)
+y=3: (2,13)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: 
+x=2: (3,13)
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(13,2,3)(nan,nan,nan)(nan,nan,nan)
+
+lst.push(1,2,14.0)
+_nnz=7
+_insertPosition=6
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)(1,14)
+y=3: (2,13)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: (2,14)
+x=2: (3,13)
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(13,2,3)(14,1,2)(nan,nan,nan)
+
+lst.push(1,3,15.0): it should NOT change the state of the List2D.
+_nnz=7
+_insertPosition=6
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)(1,14)
+y=3: (2,13)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: (2,14)
+x=2: (3,13)
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(13,2,3)(14,1,2)(nan,nan,nan)
+
+lst.insert(1,3,15.0): however, insertion is still possible:
+_nnz=7
+_insertPosition=7
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)(1,14)
+y=3: (1,15)(2,13)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: (2,14)(3,15)
+x=2: (3,13)
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(13,2,3)(14,1,2)(15,1,3)
+
+lst.insert(0,3,15.0): it should NOT change the state of the List2D.
+_nnz=7
+_insertPosition=7
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)(1,14)
+y=3: (1,15)(2,13)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: (2,14)(3,15)
+x=2: (3,13)
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(13,2,3)(14,1,2)(15,1,3)
+it=lst.rowBegin(1), *it=10, it.coordinate()=0
+++it, *it=11, it.coordinate()=0
+it.changeDir(), *it=11, it.coordinate()=1
+++it, *it=12, it.coordinate()=2
+it=lst.colBegin(1), *it=14, it.coordinate()=2
+++it, *it=15, it.coordinate()=3
+it.changeDir(), *it=15, it.coordinate()=1
+++it, *it=13, it.coordinate()=2
+
+lst.erase(lst.colBegin(2))
+_nnz=7
+_insertPosition=4
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,10)(0,11)
+y=2: (0,12)(1,14)
+y=3: (1,15)
+column Lists: 
+x=0: (0,9)(1,10)(1,11)(2,12)
+x=1: (2,14)(3,15)
+x=2: 
+buffer: (10,0,1)(9,0,0)(11,0,1)(12,0,2)(nan,nan,nan)(14,1,2)(15,1,3)
+
+lst.erase(lst.rowBegin(1))
+_nnz=7
+_insertPosition=0
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,11)
+y=2: (0,12)(1,14)
+y=3: (1,15)
+column Lists: 
+x=0: (0,9)(1,11)(2,12)
+x=1: (2,14)(3,15)
+x=2: 
+buffer: (nan,nan,nan)(9,0,0)(11,0,1)(12,0,2)(nan,nan,nan)(14,1,2)(15,1,3)
+bin: 
+[12](0,1,2,3,4,5,6,7,8,9,10,11)
+<lst,bin>=353
+lst.rowErase(2):
+_nnz=7
+_insertPosition=5
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,9)
+y=1: (0,11)
+y=2: 
+y=3: (1,15)
+column Lists: 
+x=0: (0,9)(1,11)
+x=1: (3,15)
+x=2: 
+buffer: (nan,nan,nan)(9,0,0)(11,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(15,1,3)
+lst.colErase(0):
+_nnz=7
+_insertPosition=2
+_pushPosition=7
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: (1,15)
+column Lists: 
+x=0: 
+x=1: (3,15)
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(15,1,3)

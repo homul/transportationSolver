@@ -1,0 +1,1174 @@
+a:[3](0.7,0.3,0)
+b:[4](1,0,0,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.7)(1,0.3)
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,0.7)
+x=1: (0,0.3)
+x=2: 
+buffer: (0.7,0,0)(0.3,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 
+result=0
+======================================================
+a:[3](0.7,0.3,0)
+b:[4](1,0,0,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.7)(1,0.3)
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: (0,0.7)
+x=1: (0,0.3)
+x=2: 
+buffer: (0.7,0,0)(0.3,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 
+result=0
+======================================================
+Transpose: bin=ublas::trans(bin);
+a:[4](1,0,0,0)
+b:[3](0.7,0.3,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=4
+ysize=3
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.7)
+y=1: (0,0.3)
+y=2: 
+column Lists: 
+x=0: (0,0.7)(1,0.3)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.7,0,0)(0.3,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+a:[4](1,0,0,0)
+b:[3](0.7,0.3,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.7)
+y=1: (0,0.3)
+y=2: 
+column Lists: 
+x=0: (0,0.7)(1,0.3)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.7,0,0)(0.3,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+a:[4](1,0,0,0)
+b:[3](0.6,0.4,0)
+bin:[4,3]((0,0,0),(0,0,0),(0,0,0),(0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=4, _ysize=3
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=2
+xsize=4
+ysize=3
+row Lists: 
+y=0: (0,0.6)
+y=1: (0,0.4)
+y=2: 
+column Lists: 
+x=0: (0,0.6)(1,0.4)
+x=1: 
+x=2: 
+x=3: 
+buffer: (0.6,0,0)(0.4,0,1)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 
+
+_activeYbound: 0; 1; 
+result=0
+======================================================
+Transpose: bin=ublas::trans(bin);
+a:[3](0.6,0.4,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,1,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.1)(1,0.4)
+y=1: 
+y=2: (0,0.5)
+y=3: 
+column Lists: 
+x=0: (0,0.1)(2,0.5)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.1,0,0)(0.5,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0.5
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.45,0,0.55,0)
+bin:[3,4]((0,0,1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.05)(1,0.4)
+y=1: 
+y=2: (0,0.55)
+y=3: 
+column Lists: 
+x=0: (0,0.05)(2,0.55)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.05,0,0)(0.55,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0.55
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.4,0,0.6,0)
+bin:[3,4]((0,0,1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0)(1,0.4)
+y=1: 
+y=2: (0,0.6)
+y=3: 
+column Lists: 
+x=0: (0,0)(2,0.6)
+x=1: (0,0.4)
+x=2: 
+buffer: (0,0,0)(0.6,0,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.4,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0.6
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.3,0,0.7,0)
+bin:[3,4]((0,0,1,0),(0,0,0,0),(0,0,0,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.3)
+y=1: 
+y=2: (0,0.6)(1,0.1)
+y=3: 
+column Lists: 
+x=0: (2,0.6)
+x=1: (0,0.3)(2,0.1)
+x=2: 
+buffer: (nan,nan,nan)(0.6,0,2)(0.1,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.3,1,0)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0.6
+======================================================
+a:[3](0.6,0.4,0)
+b:[4](0.7,0,0.3,0)
+bin:[3,4]((0,0,1,0),(1,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=2
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.3)(1,0.4)
+y=1: 
+y=2: (0,0.3)
+y=3: 
+column Lists: 
+x=0: (0,0.3)(2,0.3)
+x=1: (0,0.4)
+x=2: 
+buffer: (0.3,0,0)(0.4,1,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.3,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0.7
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,0,0),(0,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (0,0.5)(1,0)
+y=1: 
+y=2: (1,0.5)
+y=3: 
+column Lists: 
+x=0: (0,0.5)
+x=1: (0,0)(2,0.5)
+x=2: 
+buffer: (0.5,0,0)(0,1,0)(0.5,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((0,0,1,0),(1,0,0,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.5)
+y=1: 
+y=2: (0,0.5)(1,0)
+y=3: 
+column Lists: 
+x=0: (2,0.5)
+x=1: (0,0.5)(2,0)
+x=2: 
+buffer: (nan,nan,nan)(0.5,1,0)(0,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.5,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=1
+======================================================
+a:[3](0.5,0.5,0)
+b:[4](0.5,0,0.5,0)
+bin:[3,4]((-1,0,0,0),(0,0,-1,0),(0,0,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=6
+_pushPosition=0
+xsize=3
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=4
+_basicSolution:
+_nnz=7
+_insertPosition=0
+_pushPosition=3
+xsize=3
+ysize=4
+row Lists: 
+y=0: (1,0.5)
+y=1: 
+y=2: (0,0.5)(1,0)
+y=3: 
+column Lists: 
+x=0: (2,0.5)
+x=1: (0,0.5)(2,0)
+x=2: 
+buffer: (nan,nan,nan)(0.5,1,0)(0,1,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.5,0,2)
+
+_activeXbound: 0; 1; 
+
+_activeYbound: 0; 2; 
+result=0
+======================================================
+a:[3](0.174353,0.526345,0.299302)
+b:[2](0.499998,0.500002)
+bin:[3,2]((-0.577195,-0.995727),(-0.824028,-0.0274761),(-0.316635,-0.711737))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=2
+_basicSolution:
+_nnz=5
+_insertPosition=4
+_pushPosition=0
+xsize=3
+ysize=2
+row Lists: 
+y=0: 
+y=1: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=3, _ysize=2
+_basicSolution:
+_nnz=5
+_insertPosition=3
+_pushPosition=5
+xsize=3
+ysize=2
+row Lists: 
+y=0: (0,0.174353)(1,0.0263433)(2,0.299302)
+y=1: (1,0.500002)
+column Lists: 
+x=0: (0,0.174353)
+x=1: (0,0.0263433)(1,0.500002)
+x=2: (0,0.299302)
+buffer: (0.174353,0,0)(0.0263433,1,0)(0.500002,1,1)(nan,nan,nan)(0.299302,2,0)
+
+_activeXbound: 0; 1; 2; 
+
+_activeYbound: 0; 1; 
+result=-0.230851
+======================================================
+a:[5](0.174353,0.526345,0,0,0.299302)
+b:[5](0,0.499998,0,0.500002,0)
+bin:[5,5]((0,-0.577195,0,-0.995727,0),(0,-0.824028,0,-0.0274761,0),(0,0,0,0,0),(0,0,0,0,0),(0,-0.316635,0,-0.711737,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=3
+_pushPosition=4
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: (0,0.174353)(1,0.0263433)(4,0.299302)
+y=2: 
+y=3: (1,0.500002)
+y=4: 
+column Lists: 
+x=0: (1,0.174353)
+x=1: (1,0.0263433)(3,0.500002)
+x=2: 
+x=3: 
+x=4: (1,0.299302)
+buffer: (0.174353,0,1)(0.0263433,1,1)(0.500002,1,3)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.299302,4,1)
+
+_activeXbound: 0; 1; 4; 
+
+_activeYbound: 1; 3; 
+result=-0.230851
+======================================================
+a:[5](0,0.500004,0.314501,0,0.185495)
+b:[5](0.185493,0.500009,0.314498,0,0)
+bin:[5,5]((0,0,0,0,0),(-0.486759,-0.42754,-0.391623,0,0),(-0.382806,-0.448185,-0.00438495,0,0),(0,0,0,0,0),(-0.0374024,-0.412922,-0.120758,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=4
+_pushPosition=5
+xsize=5
+ysize=5
+row Lists: 
+y=0: (4,0.185493)
+y=1: (1,0.500004)(2,2.72063e-06)(4,1.60481e-06)
+y=2: (2,0.314498)
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: (1,0.500004)
+x=2: (1,2.72063e-06)(2,0.314498)
+x=3: 
+x=4: (0,0.185493)(1,1.60481e-06)
+buffer: (0.185493,4,0)(0.500004,1,1)(2.72063e-06,2,1)(0.314498,2,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(1.60481e-06,4,1)
+
+_activeXbound: 1; 2; 4; 
+
+_activeYbound: 0; 1; 2; 
+result=-0.222091
+======================================================
+a:[5](0,0.557567,1.11499e-14,0.000202269,0.44223)
+b:[5](0.5,0.0575673,1.11499e-14,0.442433,3.86361e-09)
+bin:[5,5]((0,0,0,0,0),(-0.209287,-0.069043,-0.481705,-0.249353,-0.062896),(-0.0654273,-0.457346,-0.0876754,-0.161266,-0.077213),(-0.292303,-0.151894,-0.423499,-0.17548,-0.279617),(-0.307085,-0.291696,-0.415541,-0.0329178,-0.0499214))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=7
+_pushPosition=8
+xsize=5
+ysize=5
+row Lists: 
+y=0: (1,0.5)(2,5.31274e-20)
+y=1: (1,0.0575673)
+y=2: (2,1.11499e-14)
+y=3: (1,8.27821e-12)(3,0.000202269)(4,0.44223)
+y=4: (1,3.86361e-09)
+column Lists: 
+x=0: 
+x=1: (0,0.5)(1,0.0575673)(3,8.27821e-12)(4,3.86361e-09)
+x=2: (0,5.31274e-20)(2,1.11499e-14)
+x=3: (3,0.000202269)
+x=4: (3,0.44223)
+buffer: (0.5,1,0)(0.0575673,1,1)(3.86361e-09,1,4)(8.27821e-12,1,3)(1.11499e-14,2,2)(0.000202269,3,3)(0.44223,4,3)(nan,nan,nan)(nan,nan,nan)(5.31274e-20,2,0)
+
+_activeXbound: 1; 2; 3; 4; 
+
+_activeYbound: 0; 1; 2; 3; 4; 
+result=-0.123211
+======================================================
+a:[5](0.0109457,0.00785009,0.5,5.06367e-10,0.481204)
+b:[5](0.0187958,0.481204,0,0.5,5.06367e-10)
+bin:[5,5]((-3.20945e-05,-0.33489,0,-0.387498,-0.458893),(-0.00675081,-0.335954,0,-0.0180553,-0.305662),(-0.0309215,-0.393834,0,-0.120687,-0.184995),(-0.328404,-0.399822,0,-0.20073,-0.0878647),(-0.205578,-0.0383554,0,-0.412371,-0.0723207))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=2
+_pushPosition=8
+xsize=5
+ysize=5
+row Lists: 
+y=0: (0,0.0109457)(2,0.00785009)
+y=1: (0,7.45931e-17)(3,1.55209e-19)(4,0.481204)
+y=2: 
+y=3: (1,0.00785009)(2,0.49215)
+y=4: (3,5.06367e-10)
+column Lists: 
+x=0: (0,0.0109457)(1,7.45931e-17)
+x=1: (3,0.00785009)
+x=2: (0,0.00785009)(3,0.49215)
+x=3: (1,1.55209e-19)(4,5.06367e-10)
+x=4: (1,0.481204)
+buffer: (1.55209e-19,3,1)(0.00785009,2,0)(nan,nan,nan)(0.0109457,0,0)(0.49215,2,3)(0.481204,4,1)(0.00785009,1,3)(5.06367e-10,3,4)(nan,nan,nan)(7.45931e-17,0,1)
+
+_activeXbound: 0; 1; 2; 3; 4; 
+
+_activeYbound: 0; 1; 3; 4; 
+result=-0.0782379
+======================================================
+a:[5](0.5,0.5,1.64749e-09,2.78211e-07,1.55418e-15)
+b:[5](6.3916e-05,0,0.499936,1.7983e-09,0.5)
+bin:[5,5]((-0.886804,0,-0.325419,-0.723283,-0.276095),(-0.220252,0,-0.275784,-0.182424,-0.109391),(-0.612329,0,-0.156955,-0.190925,-0.781374),(-0.177642,0,-0.197597,-0.584802,-0.264979),(-0.888751,0,-0.520073,-0.250635,-0.527503))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=3
+_pushPosition=7
+xsize=5
+ysize=5
+row Lists: 
+y=0: (1,6.36378e-05)(3,2.78211e-07)
+y=1: 
+y=2: (0,0.499936)(2,1.64749e-09)
+y=3: (1,1.7983e-09)
+y=4: (0,6.36378e-05)(1,0.499936)
+column Lists: 
+x=0: (2,0.499936)(4,6.36378e-05)
+x=1: (0,6.36378e-05)(3,1.7983e-09)(4,0.499936)
+x=2: (2,1.64749e-09)
+x=3: (0,2.78211e-07)
+x=4: 
+buffer: (1.7983e-09,1,3)(0.499936,0,2)(6.36378e-05,0,4)(nan,nan,nan)(0.499936,1,4)(2.78211e-07,3,0)(6.36378e-05,1,0)(nan,nan,nan)(nan,nan,nan)(1.64749e-09,2,2)
+
+_activeXbound: 0; 1; 2; 3; 
+
+_activeYbound: 0; 2; 3; 4; 
+result=-0.217409
+======================================================
+a:[5](0.165626,0.5,8.0469e-16,0.0500528,0.284321)
+b:[5](0.834374,0.165626,0,0,0)
+bin:[5,5]((-0.497336,-0.0624149,0,-0.4032,0),(-0.491318,-0.363928,0,-0.212324,0),(-0.219887,-0.149742,0,-0.09457,0),(-0.149579,-0.137921,0,-0.350317,0),(-0.265797,-0.332869,0,-0.472957,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=9
+_pushPosition=0
+xsize=5
+ysize=5
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=4
+_pushPosition=5
+xsize=5
+ysize=5
+row Lists: 
+y=0: (0,5.55112e-17)(1,0.5)(3,0.0500528)(4,0.284321)
+y=1: (0,0.165626)
+y=2: 
+y=3: 
+y=4: 
+column Lists: 
+x=0: (0,5.55112e-17)(1,0.165626)
+x=1: (0,0.5)
+x=2: 
+x=3: (0,0.0500528)
+x=4: (0,0.284321)
+buffer: (5.55112e-17,0,0)(0.5,1,0)(0.0500528,3,0)(0.284321,4,0)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.165626,0,1)
+
+_activeXbound: 0; 1; 3; 4; 
+
+_activeYbound: 0; 1; 
+result=-0.339055
+a:[5](0.000604892,0.5,1.76281e-14,0.456486,0.0429087)
+b:[5](0.992268,0.00773121,0,2.92258e-07,0)
+bin:[5,5]((-0.497336,-0.0624149,0,-0.4032,0),(-0.491318,-0.363928,0,-0.212324,0),(-0.219887,-0.149742,0,-0.09457,0),(-0.149579,-0.137921,0,-0.350317,0),(-0.265797,-0.332869,0,-0.472957,0))
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=5, _ysize=5
+_basicSolution:
+_nnz=10
+_insertPosition=6
+_pushPosition=7
+xsize=5
+ysize=5
+row Lists: 
+y=0: (1,0.492874)(2,1.76281e-14)(3,0.456486)(4,0.0429087)
+y=1: (0,0.000604892)(1,0.00712632)
+y=2: 
+y=3: (1,2.92258e-07)
+y=4: 
+column Lists: 
+x=0: (1,0.000604892)
+x=1: (0,0.492874)(1,0.00712632)(3,2.92258e-07)
+x=2: (0,1.76281e-14)
+x=3: (0,0.456486)
+x=4: (0,0.0429087)
+buffer: (0.00712632,1,1)(0.492874,1,0)(1.76281e-14,2,0)(0.456486,3,0)(0.0429087,4,0)(2.92258e-07,1,3)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.000604892,0,1)
+
+_activeXbound: 0; 1; 2; 3; 4; 
+
+_activeYbound: 0; 1; 3; 
+result=-0.324474
+======================================================
+a:[10](0.164771,0.0849163,0,0.00759166,0.0692068,0.137887,0.120127,0.129551,0.123416,0.162534)
+b:[10](0.164168,0.0847538,0,0.00854967,0.0687872,0.137666,0.123457,0.12691,0.123651,0.162059)
+bin:[10,10]((0.0141344,0,0,0,0,0,0,0,0,0),(7.00398,0.0622276,0,0,0,0,0,0,0,0),(0,0,0,0,0,0,0,0,0,0),(0,0,0,0.369124,0,0,0,0,0,0),(0,0,0,2.28409,0.239502,0,0,0,0,0),(0,0,0,15.8,2.87015,0.0951678,0,0,0,0),(0,0,0,0,0,4.1837,0.32643,0,0,0),(0,0,0,0,0,0,2.44776,0.405864,0,0),(0,0,0,0,0,0,0,2.15916,0.244172,0),(0,0,0,0,0,0,0,0,2.84345,-0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.22045e-16
+_xsize=10, _ysize=10
+_basicSolution:
+_nnz=20
+_insertPosition=19
+_pushPosition=0
+xsize=10
+ysize=10
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+y=5: 
+y=6: 
+y=7: 
+y=8: 
+y=9: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+x=5: 
+x=6: 
+x=7: 
+x=8: 
+x=9: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.22045e-16
+_xsize=10, _ysize=10
+_basicSolution:
+_nnz=20
+_insertPosition=14
+_pushPosition=17
+xsize=10
+ysize=10
+row Lists: 
+y=0: (0,0.0792514)(1,0.0849163)
+y=1: (4,0.0391427)(5,0.043011)(7,0.00260022)
+y=2: 
+y=3: (5,0.00854967)
+y=4: (5,0.0687872)
+y=5: (5,0.0175388)(6,0.120127)
+y=6: (7,0.123457)
+y=7: (7,0.00349381)(8,0.123416)
+y=8: (9,0.123651)
+y=9: (0,0.08552)(3,0.00759166)(4,0.0300642)(9,0.0388829)
+column Lists: 
+x=0: (0,0.0792514)(9,0.08552)
+x=1: (0,0.0849163)
+x=2: 
+x=3: (9,0.00759166)
+x=4: (1,0.0391427)(9,0.0300642)
+x=5: (1,0.043011)(3,0.00854967)(4,0.0687872)(5,0.0175388)
+x=6: (5,0.120127)
+x=7: (1,0.00260022)(6,0.123457)(7,0.00349381)
+x=8: (7,0.123416)
+x=9: (8,0.123651)(9,0.0388829)
+buffer: (0.0792514,0,0)(0.00260022,7,1)(0.0687872,5,4)(0.00854967,5,3)(0.08552,0,9)(0.120127,6,5)(0.0391427,4,1)(0.00759166,3,9)(0.0300642,4,9)(0.043011,5,1)(0.0175388,5,5)(0.123457,7,6)(0.00349381,7,7)(0.123416,8,7)(nan,nan,nan)(0.123651,9,8)(0.0388829,9,9)(nan,nan,nan)(nan,nan,nan)(0.0849163,1,0)
+
+_activeXbound: 0; 1; 3; 4; 5; 6; 7; 8; 9; 
+
+_activeYbound: 0; 1; 3; 4; 5; 6; 7; 8; 9; 
+result=2.35431
+======================================================
+a:[7](0,0,0.04166666666666667,0,0.4583333333333333,0,0.5)
+b:[7](0,0,0.1,0.1,0.3,0,0.5)
+bin:[7,7]((0,0,0,0,0,0,0),(0,0,0,0,0,0,0),(0,0,0,-46,-100,0,-94),(0,0,0,0,0,0,0),(0,0,-100,-91,0,0,-43),(0,0,0,0,0,0,0),(0,0,-94,-84,-43,0,0))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.220446049250313e-16
+_xsize=7, _ysize=7
+_basicSolution:
+_nnz=14
+_insertPosition=13
+_pushPosition=0
+xsize=7
+ysize=7
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+y=4: 
+y=5: 
+y=6: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+x=4: 
+x=5: 
+x=6: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.220446049250313e-16
+_xsize=7, _ysize=7
+_basicSolution:
+_nnz=14
+_insertPosition=13
+_pushPosition=6
+xsize=7
+ysize=7
+row Lists: 
+y=0: 
+y=1: 
+y=2: (2,0.04166666666666667)(4,0.05833333333333333)
+y=3: (4,0.09999999999999995)(6,5.551115123125783e-17)
+y=4: (4,0.3)
+y=5: 
+y=6: (6,0.4999999999999999)
+column Lists: 
+x=0: 
+x=1: 
+x=2: (2,0.04166666666666667)
+x=3: 
+x=4: (2,0.05833333333333333)(3,0.09999999999999995)(4,0.3)
+x=5: 
+x=6: (3,5.551115123125783e-17)(6,0.4999999999999999)
+buffer: (0.04166666666666667,2,2)(0.05833333333333333,4,2)(0.09999999999999995,4,3)(0.3,4,4)(5.551115123125783e-17,6,3)(0.4999999999999999,6,6)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 2; 4; 6; 
+
+_activeYbound: 2; 3; 4; 6; 
+result=-14.93333333333334
+======================================================
+a:[4](0,0.5,0.5,0)
+b:[4](0.5,0.25,0.25,0)
+bin:[4,4]((-9.08079083616882,-3.813622556214045,-3.004724331435153,-6.241458117236132),(-8.979966258993358,-2.784219939440592,-2.560483207162695,-5.056396584285609),(3.877879831743371,8.938488367404085,9.552727507079359,6.306514492866822),(-10.30843002573048,-4.48838609819691,-3.536217905132201,-6.32817438362547))
+-------------------------
+solver.Init(a.size(),b.size(),bin);
+_relativePrecision=2.220446049250313e-16
+_xsize=4, _ysize=4
+_basicSolution:
+_nnz=8
+_insertPosition=7
+_pushPosition=0
+xsize=4
+ysize=4
+row Lists: 
+y=0: 
+y=1: 
+y=2: 
+y=3: 
+column Lists: 
+x=0: 
+x=1: 
+x=2: 
+x=3: 
+buffer: (nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)
+
+_activeXbound: 
+
+_activeYbound: 
+-------------------------
+solver.Solve(a,b);
+_relativePrecision=2.220446049250313e-16
+_xsize=4, _ysize=4
+_basicSolution:
+_nnz=8
+_insertPosition=0
+_pushPosition=4
+xsize=4
+ysize=4
+row Lists: 
+y=0: (2,0.5)
+y=1: (1,0.25)
+y=2: (1,0.25)(2,0)
+y=3: 
+column Lists: 
+x=0: 
+x=1: (1,0.25)(2,0.25)
+x=2: (0,0.5)(2,0)
+x=3: 
+buffer: (nan,nan,nan)(0.5,2,0)(0.25,1,2)(0,2,2)(nan,nan,nan)(nan,nan,nan)(nan,nan,nan)(0.25,1,1)
+
+_activeXbound: 1; 2; 
+
+_activeYbound: 0; 1; 2; 
+result=0.6027641292208636
