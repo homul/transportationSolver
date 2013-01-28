@@ -9,17 +9,6 @@
 
 namespace DD{
 
- template<class T>
- class mul
- {
- public:
-	 mul(const T& value):_value(value){};
-	 void operator ()(T& t)const{t*=_value;}
-	 T operator ()(const T& val)const{return val*_value;}
- private:
-	 T _value;
- };
-
  /*
   * copies indices of non-zero elements of a sparse array
   */
@@ -135,7 +124,7 @@ namespace DD{
 	floatType acc=std::accumulate(begin,end,(floatType)0.0);
 
  	if (acc!=0.0)
- 	 std::for_each(begin,end,mul<floatType>(1.0/acc));
+ 	  std::transform(begin,end,begin,std::bind1st(std::multiplies<floatType>(),1.0/acc));
  	else
  	 *begin=1.0;
 
