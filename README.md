@@ -33,3 +33,4 @@ The folder /tests contains unit and regression tests. Use ccmake and make comman
 Versions history:
 1.0 - initial version
 1.1 - FIXED: Numerical bug when dealing with degenerate problems 
+1.2 - FIXED: Maximum number of iterations is now dependent on the problem size and can be additionally corrected in the PrimalSolver object constructor
