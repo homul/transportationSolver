@@ -21,4 +21,9 @@ namespace TST{
 
 		return true;
 	};
+
+	double RandomDouble(double max)
+	{
+		return double(max*rand()/RAND_MAX);
+	};
 }

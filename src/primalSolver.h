@@ -61,12 +61,12 @@ public:
 	typedef std::vector<size_t> IndexArray;
 	typedef std::list<typename FeasiblePoint::const_iterator> CycleList;
 
-	PrimalSolver(ostream& fout=std::cout,floatType relativePrecision=floatTypeEps):
-		_fout(fout),_pbin(0),_xsize(0),_ysize(0),_basicSolution(0,0,0),_relativePrecision(relativePrecision)
+	PrimalSolver(ostream& fout=std::cout,floatType relativePrecision=floatTypeEps,floatType maxIterationNumber=100):
+		_fout(fout),_pbin(0),_xsize(0),_ysize(0),_basicSolution(0,0,0),_relativePrecision(relativePrecision),_maxIterationNumber(maxIterationNumber)
 	{};
 
-	PrimalSolver(const size_t& xsize,const size_t& ysize,const DenseMatrix& bin,ostream& fout=std::cout,floatType relativePrecision=floatTypeEps)
-	: _fout(fout),_pbin(&bin),_xsize(xsize),_ysize(ysize),_basicSolution(xsize,ysize,_nnz(xsize,ysize))
+	PrimalSolver(const size_t& xsize,const size_t& ysize,const DenseMatrix& bin,ostream& fout=std::cout,floatType relativePrecision=floatTypeEps,floatType maxIterationNumber=100)
+	: _fout(fout),_pbin(&bin),_xsize(xsize),_ysize(ysize),_basicSolution(xsize,ysize,_nnz(xsize,ysize)),_maxIterationNumber(maxIterationNumber)
 	{
 		Init(xsize,ysize,bin,relativePrecision);
 	};
@@ -110,6 +110,7 @@ private:
 	FeasiblePoint _basicSolution;
 	IndexArray _activeXbound;
 	IndexArray _activeYbound;
+	floatType _maxIterationNumber;
 };
 
 template<bool maximize,class DenseMatrix,class UnarySparse>
@@ -154,7 +155,8 @@ template<bool maximize,class DenseMatrix,class UnarySparse>
 void PrimalSolver<maximize,DenseMatrix,UnarySparse>::
 _checkCounter (size_t* pcounter, const char* errmess)
 {
-	if ((*pcounter)++ < 1000)
+	//if ((*pcounter)++ < 1000)
+	if ((*pcounter)++ < std::max(_xsize*_ysize*100.0,_maxIterationNumber) )//100 - magic number
 		return;
 
 	throw std::runtime_error(errmess);
@@ -546,7 +548,7 @@ std::pair<bool,floatType> PrimalSolver<maximize,DenseMatrix,UnarySparse>::
 	while ((objectiveImprovementFlag)&&(!_isOptimal(&move)))
 	{
 		objectiveImprovementFlag=_MovePotentials(move); //changes basic solution
-		_checkCounter(&counter,"Solve-infinite loop!\n");
+		_checkCounter(&counter,"Solve-infinite loop! Try to increase <maxIterationNumber> in constructor.\n");
 		if (!objectiveImprovementFlag)
 		{
 			PrintProblemDescription(xarr,yarr);

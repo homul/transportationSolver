@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <cstdlib>// for rand()
 #include "common.h"
 #include "testcommon.h"
 #include "smallobjects.h"
@@ -11,13 +12,14 @@
 using namespace std;
 using namespace DD;
 using namespace OUT;
+using namespace TST;
 
 struct TestTransportSolver: public CppUnit::TestFixture {
 CPPUNIT_TEST_SUITE( TestTransportSolver );
 		CPPUNIT_TEST( test_primalSolver_min );
 		CPPUNIT_TEST( test_primalSolver_max );
+		CPPUNIT_TEST( test_manyLabels );
 CPPUNIT_TEST_SUITE_END();
-
 
 void PrintABbin(ofstream& fout, const SparseArray& a, const SparseArray& b,
 			const Matrix& bin) {
@@ -676,5 +678,42 @@ void PrintABbin(ofstream& fout, const SparseArray& a, const SparseArray& b,
 
 		CPPUNIT_ASSERT(TST::areEqualTXTfiles(outTst,outChk));
 	};
+
+	void test_manyLabels()
+	{
+
+		string outTst("testManyLabels.tst"), outChk("testManyLabels.chk");
+		ofstream fout(outTst.c_str());
+
+		srand(100);
+		{
+		size_t a_size = 30, b_size = 40;
+
+		PrimalSolver<false, Matrix, SparseArray> solver(fout);
+		SparseArray a(a_size, 0.0);
+		SparseArray b(b_size, 0.0);
+		Matrix bin(a_size, b_size, 0.0);
+
+		a[0] = 0.7;
+		a[1] = 0.3;
+		for (size_t i=0;i<a.size();++i)
+			a(i)=RandomDouble(1.0);
+		_Normalize(a.begin(),a.end());
+		for (size_t i=0;i<b.size();++i)
+			b(i)=RandomDouble(1.0);
+		_Normalize(b.begin(),b.end());
+
+		for (size_t i=0;i<a.size();++i)
+		 for (size_t j=0;j<b.size();++j)
+		  bin(i,j)=RandomDouble(10.0);
+
+
+		CPPUNIT_ASSERT(simpleInitTest(fout,solver,a,b,bin));
+	}
+
+	fout.close();
+
+	CPPUNIT_ASSERT(TST::areEqualTXTfiles(outTst,outChk));
+	}
 };
 CPPUNIT_TEST_SUITE_REGISTRATION( TestTransportSolver );

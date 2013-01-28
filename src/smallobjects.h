@@ -176,6 +176,7 @@ floatType  FilterSparseArray(const UnarySparse& xarr,UnarySparse* pout, floatTyp
 
  	return _Normalize(out.begin(),out.end());
  }
+
 };//DD
 
 namespace OUT{
