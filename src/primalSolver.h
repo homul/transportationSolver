@@ -548,7 +548,7 @@ std::pair<bool,floatType> PrimalSolver<maximize,DenseMatrix,UnarySparse>::
 	while ((objectiveImprovementFlag)&&(!_isOptimal(&move)))
 	{
 		objectiveImprovementFlag=_MovePotentials(move); //changes basic solution
-		_checkCounter(&counter,"Solve-infinite loop! Try to increase <maxIterationNumber> in constructor.\n");
+		_checkCounter(&counter,"PrimalSolver::Solve(): maximal number of iterations reached! Try to increase <maxIterationNumber> in constructor.\n");
 		if (!objectiveImprovementFlag)
 		{
 			PrintProblemDescription(xarr,yarr);
